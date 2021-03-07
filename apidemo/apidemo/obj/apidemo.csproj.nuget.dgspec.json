@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Home\\dotnet_base_20210306\\apidemo\\apidemo\\apidemo.csproj": {}
+    "D:\\Home\\demoproject\\base_dotnet\\apidemo\\apidemo\\apidemo.csproj": {}
   },
   "projects": {
-    "D:\\Home\\dotnet_base_20210306\\apidemo\\apidemo\\apidemo.csproj": {
+    "D:\\Home\\demoproject\\base_dotnet\\apidemo\\apidemo\\apidemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Home\\dotnet_base_20210306\\apidemo\\apidemo\\apidemo.csproj",
+        "projectUniqueName": "D:\\Home\\demoproject\\base_dotnet\\apidemo\\apidemo\\apidemo.csproj",
         "projectName": "apidemo",
-        "projectPath": "D:\\Home\\dotnet_base_20210306\\apidemo\\apidemo\\apidemo.csproj",
+        "projectPath": "D:\\Home\\demoproject\\base_dotnet\\apidemo\\apidemo\\apidemo.csproj",
         "packagesPath": "C:\\Users\\Even.Chang\\.nuget\\packages\\",
-        "outputPath": "D:\\Home\\dotnet_base_20210306\\apidemo\\apidemo\\obj\\",
+        "outputPath": "D:\\Home\\demoproject\\base_dotnet\\apidemo\\apidemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,6 +56,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using apidemo.Inertface;
 using apidemo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -11,11 +12,14 @@ namespace apidemo.Controllers
 {
     public class HomeController : Controller
     {
+        
         private readonly ILogger<HomeController> _logger;
+        private readonly IFaqService _faqServcie;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IFaqService faqServcie)
         {
             _logger = logger;
+            _faqServcie = faqServcie;
         }
 
         public IActionResult Index()
@@ -33,5 +37,6 @@ namespace apidemo.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

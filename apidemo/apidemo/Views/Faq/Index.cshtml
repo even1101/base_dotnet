@@ -1,0 +1,107 @@
+﻿@model IEnumerable<apidemo.Models.Faq>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Add">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FaqId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FontColorId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsPublic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsCancel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateDepartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifyEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifyDepartment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifyDateTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FaqId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FontColorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsPublic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsCancel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDepartment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifyEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifyDepartment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifyDateTime)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.FaqId }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.FaqId */ }) |
+                @Html.ActionLink("Del", "Del", new { id = item.FaqId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
